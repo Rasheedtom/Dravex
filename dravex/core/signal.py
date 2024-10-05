@@ -11,7 +11,7 @@ class Signal:
         if sample_rate <= 0:
             sample_rate = 44100
         self._samples = tuple(float(s) for s in samples)
-        self._sample_rate = int(sample_rate)
+        self._sample_rate = max(1, int(sample_rate))
 
     @property
     def samples(self):
