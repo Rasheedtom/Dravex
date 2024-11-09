@@ -27,8 +27,8 @@ def fft(x):
     m = 2
     while m <= n:
         half = m // 2
-        w_re = math.cos(TAU / m)
-        w_im = -math.sin(TAU / m)
+        twiddle_re = math.cos(TAU / m)
+        twiddle_im = -math.sin(TAU / m)
         for k in range(0, n, m):
             tw_re, tw_im = 1.0, 0.0
             for j in range(half):
