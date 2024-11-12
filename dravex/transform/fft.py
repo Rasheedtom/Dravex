@@ -40,7 +40,7 @@ def fft(x):
                 imag[idx2] = imag[idx1] - ti
                 real[idx1] += tr
                 imag[idx1] += ti
-                tw_re, tw_im = tw_re * w_re - tw_im * w_im, tw_re * w_im + tw_im * w_re
+                tw_re, tw_im = tw_re * twiddle_re - tw_im * twiddle_im, tw_re * twiddle_im + tw_im * twiddle_re
         m <<= 1
     return list(zip(real, imag))
 
