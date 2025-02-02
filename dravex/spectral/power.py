@@ -16,7 +16,7 @@ def periodogram(x, sample_rate=44100, window=None):
     else:
         win_power = 1.0
     mags = rfft(x)
-    psd = [(m * m) / (n * sample_rate * win_power) for m in mags]
+    psd = [max(0.0, (m * m) / (n * sample_rate * win_power)) for m in mags]
     freqs = [i * sample_rate / n for i in range(len(psd))]
     return freqs, psd
 
