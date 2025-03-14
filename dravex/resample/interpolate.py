@@ -57,7 +57,7 @@ def resample_ratio(x, ratio):
         frac = pos - idx
         if idx + 1 < n:
             result.append(x[idx] * (1 - frac) + x[idx + 1] * frac)
-        elif idx < n:
+        elif 0 <= idx < n:
             result.append(x[idx])
         else:
             result.append(0.0)
