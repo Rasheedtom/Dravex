@@ -15,6 +15,8 @@ def fm_modulate(signal, carrier_freq, modulation_index, sample_rate):
     for i in range(n):
         t = i / sample_rate
         phase += TAU * carrier_freq / sample_rate + modulation_index * signal[i] / sample_rate
+        if phase > 1e6:
+            phase -= TAU * int(phase / TAU)
         result.append(math.cos(phase))
     return result
 
