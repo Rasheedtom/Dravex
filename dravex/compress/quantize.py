@@ -10,8 +10,8 @@ def uniform_quantize(x, bits):
     half = levels // 2
     result = []
     for s in x:
-        q = int(round(s * half))
-        q = max(-half, min(half - 1, q))
+        raw = int(round(s * half))
+        q = max(-half, min(half - 1, raw))
         result.append(q / half)
     return result
 
