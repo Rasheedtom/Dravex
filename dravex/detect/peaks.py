@@ -3,6 +3,8 @@
 def find_peaks(x, min_height=None, min_distance=1, prominence=None):
     """Find local maxima in signal."""
     n = len(x)
+    if n < 3:
+        return []
     peaks = []
     for i in range(1, n - 1):
         if x[i] > x[i-1] and x[i] > x[i+1]:
