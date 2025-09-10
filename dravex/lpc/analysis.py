@@ -26,6 +26,7 @@ def levinson_durbin(r, order):
         for j in range(1, i):
             lam += a[j] * r[i - j]
         lam = (r[i] - lam) / e if e > DEFAULT_EPSILON else 0.0
+        lam = max(-0.999, min(0.999, lam))
         new_a = list(a)
         new_a[i] = lam
         for j in range(1, i):
