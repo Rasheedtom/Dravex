@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  test:
+    build: .
+    command: python -m pytest tests/ -v --cov=dravex --cov-branch --cov-config=.coveragerc
+    volumes:
+      - .:/app
