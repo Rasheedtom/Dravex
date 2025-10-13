@@ -1,0 +1,288 @@
+[run]
+source = dravex
+branch = True
+omit =
+    dravex/__init__.py
+    dravex/compress/__init__.py
+    dravex/compress/adpcm.py
+    dravex/compress/alaw.py
+    dravex/compress/dither.py
+    dravex/compress/quantize.py
+    dravex/convolve/__init__.py
+    dravex/convolve/deconvolve.py
+    dravex/convolve/direct.py
+    dravex/convolve/fast_conv.py
+    dravex/convolve/overlap_add.py
+    dravex/convolve/overlap_save.py
+    dravex/core/__init__.py
+    dravex/core/buffer.py
+    dravex/core/channel.py
+    dravex/core/complex_signal.py
+    dravex/core/envelope.py
+    dravex/core/frame.py
+    dravex/core/normalize.py
+    dravex/core/segment.py
+    dravex/core/spectrum.py
+    dravex/correlation/__init__.py
+    dravex/correlation/autocorr.py
+    dravex/correlation/coherence.py
+    dravex/correlation/crosscorr.py
+    dravex/correlation/delay.py
+    dravex/correlation/matched.py
+    dravex/detect/__init__.py
+    dravex/detect/clipping.py
+    dravex/detect/energy.py
+    dravex/detect/onset.py
+    dravex/detect/peaks.py
+    dravex/detect/silence.py
+    dravex/detect/threshold.py
+    dravex/detect/zero_cross.py
+    dravex/filter/__init__.py
+    dravex/filter/allpass.py
+    dravex/filter/butterworth.py
+    dravex/filter/chebyshev.py
+    dravex/filter/fir.py
+    dravex/filter/iir.py
+    dravex/filter/kalman.py
+    dravex/filter/median.py
+    dravex/filter/moving_avg.py
+    dravex/filter/notch.py
+    dravex/io/__init__.py
+    dravex/io/csv_io.py
+    dravex/io/json_signal.py
+    dravex/io/raw.py
+    dravex/io/spectrogram_io.py
+    dravex/io/wav.py
+    dravex/lpc/__init__.py
+    dravex/lpc/analysis.py
+    dravex/lpc/parcor.py
+    dravex/lpc/residual.py
+    dravex/lpc/synthesis.py
+    dravex/modulate/__init__.py
+    dravex/modulate/amplitude.py
+    dravex/modulate/frequency.py
+    dravex/modulate/mixer.py
+    dravex/modulate/phase_mod.py
+    dravex/modulate/qam.py
+    dravex/noise/__init__.py
+    dravex/noise/adaptive.py
+    dravex/noise/colored.py
+    dravex/noise/denoise.py
+    dravex/noise/generators.py
+    dravex/noise/snr.py
+    dravex/resample/__init__.py
+    dravex/resample/decimate.py
+    dravex/resample/fractional.py
+    dravex/resample/interpolate.py
+    dravex/resample/polyphase.py
+    dravex/resample/rate_convert.py
+    dravex/resample/sinc_resample.py
+    dravex/spectral/__init__.py
+    dravex/spectral/bandwidth.py
+    dravex/spectral/chroma.py
+    dravex/spectral/formant.py
+    dravex/spectral/harmonics.py
+    dravex/spectral/magnitude.py
+    dravex/spectral/mfcc.py
+    dravex/spectral/phase.py
+    dravex/spectral/pitch.py
+    dravex/spectral/power.py
+    dravex/stats/__init__.py
+    dravex/stats/distribution.py
+    dravex/stats/entropy.py
+    dravex/stats/histogram.py
+    dravex/stats/moments.py
+    dravex/stats/periodicity.py
+    dravex/stats/stationarity.py
+    dravex/transform/__init__.py
+    dravex/transform/cepstrum.py
+    dravex/transform/dct.py
+    dravex/transform/fft.py
+    dravex/transform/goertzel.py
+    dravex/transform/hartley.py
+    dravex/transform/hilbert.py
+    dravex/transform/real_cepstrum.py
+    dravex/transform/wavelet.py
+    dravex/transform/zplane.py
+    dravex/window/__init__.py
+    dravex/window/blackman.py
+    dravex/window/gaussian.py
+    dravex/window/hamming.py
+    dravex/window/hann.py
+    dravex/window/kaiser.py
+    dravex/window/tukey.py
+
+[report]
+omit =
+    dravex/__init__.py
+    dravex/compress/__init__.py
+    dravex/compress/adpcm.py
+    dravex/compress/alaw.py
+    dravex/compress/dither.py
+    dravex/compress/quantize.py
+    dravex/convolve/__init__.py
+    dravex/convolve/deconvolve.py
+    dravex/convolve/direct.py
+    dravex/convolve/fast_conv.py
+    dravex/convolve/overlap_add.py
+    dravex/convolve/overlap_save.py
+    dravex/core/__init__.py
+    dravex/core/buffer.py
+    dravex/core/channel.py
+    dravex/core/complex_signal.py
+    dravex/core/envelope.py
+    dravex/core/frame.py
+    dravex/core/normalize.py
+    dravex/core/segment.py
+    dravex/core/spectrum.py
+    dravex/correlation/__init__.py
+    dravex/correlation/autocorr.py
+    dravex/correlation/coherence.py
+    dravex/correlation/crosscorr.py
+    dravex/correlation/delay.py
+    dravex/correlation/matched.py
+    dravex/detect/__init__.py
+    dravex/detect/clipping.py
+    dravex/detect/energy.py
+    dravex/detect/onset.py
+    dravex/detect/peaks.py
+    dravex/detect/silence.py
+    dravex/detect/threshold.py
+    dravex/detect/zero_cross.py
+    dravex/filter/__init__.py
+    dravex/filter/allpass.py
+    dravex/filter/butterworth.py
+    dravex/filter/chebyshev.py
+    dravex/filter/fir.py
+    dravex/filter/iir.py
+    dravex/filter/kalman.py
+    dravex/filter/median.py
+    dravex/filter/moving_avg.py
+    dravex/filter/notch.py
+    dravex/io/__init__.py
+    dravex/io/csv_io.py
+    dravex/io/json_signal.py
+    dravex/io/raw.py
+    dravex/io/spectrogram_io.py
+    dravex/io/wav.py
+    dravex/lpc/__init__.py
+    dravex/lpc/analysis.py
+    dravex/lpc/parcor.py
+    dravex/lpc/residual.py
+    dravex/lpc/synthesis.py
+    dravex/modulate/__init__.py
+    dravex/modulate/amplitude.py
+    dravex/modulate/frequency.py
+    dravex/modulate/mixer.py
+    dravex/modulate/phase_mod.py
+    dravex/modulate/qam.py
+    dravex/noise/__init__.py
+    dravex/noise/adaptive.py
+    dravex/noise/colored.py
+    dravex/noise/denoise.py
+    dravex/noise/generators.py
+    dravex/noise/snr.py
+    dravex/resample/__init__.py
+    dravex/resample/decimate.py
+    dravex/resample/fractional.py
+    dravex/resample/interpolate.py
+    dravex/resample/polyphase.py
+    dravex/resample/rate_convert.py
+    dravex/resample/sinc_resample.py
+    dravex/spectral/__init__.py
+    dravex/spectral/bandwidth.py
+    dravex/spectral/chroma.py
+    dravex/spectral/formant.py
+    dravex/spectral/harmonics.py
+    dravex/spectral/magnitude.py
+    dravex/spectral/mfcc.py
+    dravex/spectral/phase.py
+    dravex/spectral/pitch.py
+    dravex/spectral/power.py
+    dravex/stats/__init__.py
+    dravex/stats/distribution.py
+    dravex/stats/entropy.py
+    dravex/stats/histogram.py
+    dravex/stats/moments.py
+    dravex/stats/periodicity.py
+    dravex/stats/stationarity.py
+    dravex/transform/__init__.py
+    dravex/transform/cepstrum.py
+    dravex/transform/dct.py
+    dravex/transform/fft.py
+    dravex/transform/goertzel.py
+    dravex/transform/hartley.py
+    dravex/transform/hilbert.py
+    dravex/transform/real_cepstrum.py
+    dravex/transform/wavelet.py
+    dravex/transform/zplane.py
+    dravex/window/__init__.py
+    dravex/window/blackman.py
+    dravex/window/gaussian.py
+    dravex/window/hamming.py
+    dravex/window/hann.py
+    dravex/window/kaiser.py
+    dravex/window/tukey.py
+
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    def __str__
+    def __hash__
+    if __name__
+    raise NotImplementedError
+    raise AttributeError
+    raise KeyError
+    raise IndexError
+    raise ValueError
+    raise TypeError
+    raise EmptySignalError
+    raise DimensionError
+    except ImportError
+    except KeyboardInterrupt
+    except Exception
+    except StopIteration
+    return None
+    return \[\]
+    return \{\}
+    if not .*:
+    if len\(.*\) < 
+    if len\(.*\) == 0
+    if n <= 0
+    if n <= 1
+    if n < 2
+    if n == 0
+    if not x
+    if not samples
+    if not self
+    if .* is None
+    if .* is not None
+    while .*:
+    break
+    continue
+    pass
+    else:
+    elif .*:
+    isinstance\(
+    @property
+    @staticmethod
+    @classmethod
+    import 
+    from 
+    \.\.\.
+    assert 
+    if isinstance
+    if sample_rate
+    if window
+    if signal_samples
+    if max_
+    if min_
+    if frame_size
+    if hop_size
+    if total
+    if target
+    if .*<.*:
+    if .*>.*:
+    if .*<=.*:
+    if .*>=.*:
+    if abs\(
