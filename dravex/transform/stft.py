@@ -14,7 +14,7 @@ def stft(signal_samples, frame_size=1024, hop_size=256, window=None):
         chunk = signal_samples[pos:pos + frame_size]
         windowed = [s * w for s, w in zip(chunk, window)]
         N = next_power_of_2(len(windowed))
-        padded = windowed + [0.0] * (N - len(windowed))
+        padded = windowed if N == len(windowed) else windowed + [0.0] * (N - len(windowed))
         X = fft(padded)
         n_bins = N // 2 + 1
         mags = [math.sqrt(X[k][0]**2 + X[k][1]**2) for k in range(n_bins)]
