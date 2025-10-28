@@ -8,6 +8,8 @@ def write_wav(filename, samples, sample_rate=44100, bits=16):
     """
     """Write PCM WAV file."""
     n = len(samples)
+    if n == 0:
+        return
     bytes_per_sample = bits // 8
     data_size = n * bytes_per_sample
     max_val = (2 ** (bits - 1)) - 1
