@@ -9,7 +9,7 @@ def cross_correlation(x, y, max_lag=None):
         max_lag = n
     result = []
     for lag in range(-max_lag + 1, max_lag):
-        s = 0.0
+        acc = 0.0
         for i in range(n):
             j = i + lag
             if 0 <= j < len(y):
