@@ -13,7 +13,8 @@ def white_noise(n, amplitude=1.0, rng=None):
     """Generate white (uniform) noise."""
     if rng is None:
         rng = _random.Random(42)
-    return [amplitude * (2 * rng.random() - 1) for _ in range(n)]
+    samples = [amplitude * (2 * rng.random() - 1) for _ in range(n)]
+    return samples
 
 def gaussian_noise(n, mean=0.0, std=1.0, rng=None):
     """Generate Gaussian (normal) noise."""
