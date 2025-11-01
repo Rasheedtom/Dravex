@@ -13,8 +13,8 @@ def cross_correlation(x, y, max_lag=None):
         for i in range(n):
             j = i + lag
             if 0 <= j < len(y):
-                s += x[i] * y[j]
-        result.append(s)
+                acc += x[i] * y[j]
+        result.append(acc)
     return result
 
 def normalized_cross_correlation(x, y, max_lag=None):
