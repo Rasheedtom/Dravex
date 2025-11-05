@@ -9,7 +9,8 @@ def mean(x):
 
 def variance(x):
     """Sample variance using two-pass algorithm."""
-    if len(x) < 2:
+    n = len(x)
+    if n < 2:
         return 0.0
     m = mean(x)
     return sum((s - m)**2 for s in x) / (len(x) - 1)
