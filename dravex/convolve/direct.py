@@ -3,6 +3,8 @@ def convolve(x, h):
     """Direct linear convolution. O(N*M)."""
     n = len(x)
     m = len(h)
+    if n == 0 or m == 0:
+        return []
     out_len = n + m - 1
     y = [0.0] * out_len
     for i in range(n):
