@@ -66,8 +66,6 @@ class RingBuffer:
         self._count = 0
 
     def latest(self, n):
-        if self._count == 0:
-            return []
         n = min(n, self._count)
         result = []
         for i in range(n):
