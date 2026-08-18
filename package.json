@@ -1,0 +1,27 @@
+{
+  "name": "dravex-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "node scripts/lint-web.mjs",
+    "check": "node scripts/check-web.mjs",
+    "test:python": "python -m pytest"
+  },
+  "dependencies": {
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "vite": "^6.4.3",
+    "vitest": "^3.2.7"
+  }
+}

@@ -8,3 +8,8 @@ htmlcov/
 dist/
 build/
 .mypy_cache/
+
+# React workbench
+node_modules/
+coverage/
+.vite/
